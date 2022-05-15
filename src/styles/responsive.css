@@ -1,0 +1,110 @@
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .mobileMenu {
+        top: 0;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .mobileNav {
+        top: 3em;
+        background-color: #1C658C;
+        z-index: 2;
+        width: 100%;
+        position: fixed;
+        -webkit-transform: translate(-100%, -100%);
+        transform: translate(-100%, 0);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .mobileNavitem {
+        display: list-item;
+        text-align: center;
+        margin-left: 80px;
+        margin-right: 80px;
+        color: #1C658C;
+        width: 100%;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../public/heros/heros-small.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero .hero__inner {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .mobileMenu {
+        display: none;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+
+    .navlist {
+        width: 70%;
+    }
+
+    .cardlist {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .cardlist {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .menu__list,
+    .poster__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../public/heros/heros-large.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero .hero__inner {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+
+    .menu__list,
+    .poster__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,50 @@
+.hero {
+    display: block;
+    align-items: center;
+    min-height: 50rem;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../public/heros/heros.jpg');
+}
+
+.hero__inner {
+    font-size: 30px;
+    position: absolute;
+    bottom: 250px;
+    width: 100%;
+    text-align: center;
+    color: deepskyblue;
+}
+
+.hero__tagline {
+    text-align: center;
+}
+
+/* @media screen and (min-width: 300px) {
+    .hero {
+        height: 600px;
+    }
+
+    .hero .hero__inner {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .hero {
+        height: 900px;
+    }
+
+    .hero img {
+        min-width: 1000px;
+    }
+
+    .hero .hero__inner {
+        font-size: 24px;
+    }
+} */
